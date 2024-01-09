@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+* {
+  font-family: "Ubuntu", sans-serif;
+}
+
+:root {
+  --main-color: #0b9ccb;
+  --sub-color: #53bd70;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+input,
+textarea,
+select {
+  padding: 10px 0;
+  background-color: transparent;
+  border-bottom: 1px solid #0b9ccb;
+  outline: none;
+  color: white;
+  width: 100%;
+}
+
+*::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #0b9ccb;
+  border: 1px solid transparent;
+  background-clip: content-box;
+}
+
+table {
+  margin-top: 20px;
+}
+
+.table tr td,
+.table tr th {
+  padding: 8px 20px !important;
+  font-size: 15px !important;
+  border: 1px solid #ffffff !important;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #1818181e;
+  color: black;
+}
+
+.table tbody tr:nth-child(odd) {
+  background-color: #b9b9b936;
+  color: black;
+}
+
+.bg_color {
+  background-color: #0b9ccb !important;
+}
+
+.sub_total {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
